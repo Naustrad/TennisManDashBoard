@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../ressources/fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mulish-SemiBold';
+    src: url('../../ressources/fonts/Mulish/Mulish-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mulish-Bold';
+    src: url('../../ressources/fonts/Mulish/Mulish-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    height: 100%;
+}
+body {
+    background-image: url('../../ressources/images/wallpaper.jpg');
+    font-family: 'Montserrat-Bold';
+    padding: 0;
+}
+
+@media (max-width : 992px){
+    h1{
+        font-size: 1.625rem;
+        line-height: 1.875rem;
+    }
+    h2{
+        font-size: 1.375rem;
+        line-height: 1.75rem;
+    }
+    body{
+        width:  992px;
+    }
+}
+
