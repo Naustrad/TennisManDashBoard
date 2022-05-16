@@ -1,0 +1,80 @@
+.player-details {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    min-height: 95vh;
+
+    .exit {
+        margin: 10px auto;
+        text-align: center;
+        font-size: 70px;
+        color: #FFF;
+        font-weight: 100;
+    }
+
+    .main-container {
+        margin: 1rem 10%;
+        background-color: white;
+        padding-top: 30px;
+
+        .player-img {
+            img {
+                width: 200%;
+                margin-left: -120px;
+                -webkit-filter: drop-shadow(5px 5px 5px #222);
+                filter: drop-shadow(5px 5px 5px #222);
+                min-width: 300px;
+            }
+        }
+
+        .player-info {
+            .player-name {
+                color: #F2753B;
+                font-family: 'Montserrat-bold';
+                margin: 10px 0;
+                font-size: 130px;
+
+                .firstname {
+                    margin-bottom: -70px;
+                    font-size: 93px;
+                    color: transparent;
+                    -webkit-text-stroke-width: 3px;
+                    -webkit-text-stroke-color: #F2753B;
+                }
+            }
+
+            .country {
+                padding: 30px;
+                img {
+                    -webkit-filter: drop-shadow(5px 5px 5px rgba(#000, 0.3));
+                    filter: drop-shadow(5px 5px 5px rgba(#000, 0.3));
+                    width: 60%;
+                }
+
+                .name {
+                    letter-spacing: 15px;
+                    font-size: 65px;
+                    opacity: 30%;
+                    font-weight: 100;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+.player-detail {
+    margin: 30px 5%;
+    padding: 0 14%;
+
+    .label {
+        font-family: 'Mulish-Bold';
+        color: #000000;
+        opacity: 30%;
+    }
+
+    .data {
+        color: #F2753B;
+        font-family: 'Montserrat-bold';
+    }
+}

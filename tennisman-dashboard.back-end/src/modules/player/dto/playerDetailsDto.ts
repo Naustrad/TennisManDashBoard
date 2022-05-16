@@ -17,7 +17,7 @@ export class PlayerDetailsDto {
         this.rank = player.rank;
         this.points = player.points;
         this.height = player.height;
-        this.weight = player.weight;
+        this.weight = player.weight/1000;
         this.age = player.age;
         this.last = player.last;
         this.country = player.country;

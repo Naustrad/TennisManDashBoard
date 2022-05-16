@@ -12,10 +12,7 @@ first you need to download and Install mysql if you don't already have it to do 
 you need to create a database and go to tennisman-dashboard.back-end\.env and change enviorement according to your database info.
 
 Install node use this [link](https://nodejs.org/en/download/).
-Then Install nestJs cli using :
-```bash
-  npm i -g @nestjs/cli
-```
+
 Then go to the project and run in backend project directory (tennisman-dashboard.back-end)
 
 ```bash

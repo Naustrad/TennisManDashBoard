@@ -15,7 +15,7 @@ export class PlayerCreateSeeder implements Seeder {
                     "code": "SRB"
                 },
                 {
-                    "picture": "https://data.latelier.co/training/tennis_stats/resources/USA.png",
+                    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
                     "code": "USA"
                 },
                 {
@@ -114,7 +114,7 @@ export class PlayerCreateSeeder implements Seeder {
                     "shortname": "S.WIL",
                     "sex": sex.F,
                     "country": {
-                        "picture": "https://data.latelier.co/training/tennis_stats/resources/USA.png",
+                        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png",
                         "code": "USA"
                     },
                     "picture": "https://data.latelier.co/training/tennis_stats/resources/Serena.png",

@@ -1,7 +1,7 @@
 .home{
     .search-input{
-        height: 15rem;
-        padding-top: 10rem;
+        height: 12rem;
+        padding-top: 7rem;
         padding-right: 0;
         input{
             width: 100%;
@@ -19,9 +19,70 @@
     .main-content{
         margin: 10px 10%;
         .players{
+            .scroll{
+                
+                @media (min-width : 1281px) {
+                    max-height: 620px;
+                    overflow-y: scroll;
+                } 
+            }
+            
+            
             .player{
                 margin: 10px 0;
             }
         }
+        .stats{
+            border-radius: 20px;
+            background-color: rgba($color: #fff, $alpha: 0.5);
+            padding: 30px;
+            color: #000000;
+            .label{
+                color: #000;
+                font-family: 'Montserrat-bold';
+                font-size: 27px;
+            }
+            .median-height{
+                margin: 20px auto;
+                h3{
+                    color: #000;
+                    font-family: 'Montserrat-bold';
+                    font-size: 30px;
+                }
+            }
+            .avg-bmi{
+                margin: 30px auto;
+                h3{
+                    color: #000;
+                    font-family: 'Montserrat-bold';
+                    font-size: 30px;
+                }
+            }
+            .country{
+                margin: 20px auto;
+                .data{
+                    h3{
+                        color: #000;
+                        font-family: 'Montserrat-bold';
+                        font-size: 30px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
     }
 }
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: 0.3); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba($color: #000000, $alpha: 0.6);  
+    border-radius: 10px;
+  }

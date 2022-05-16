@@ -23,9 +23,10 @@ body {
     background-image: url('../../ressources/images/wallpaper.jpg');
     font-family: 'Montserrat-Bold';
     padding: 0;
+    overflow: hidden;
 }
 
-@media (max-width : 992px){
+@media (max-width : 1281px){
     h1{
         font-size: 1.625rem;
         line-height: 1.875rem;
