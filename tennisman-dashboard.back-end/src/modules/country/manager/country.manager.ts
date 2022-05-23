@@ -10,8 +10,6 @@ export class CountryManager{
             let totalWins = winsStats.reduce( (a,b) => (+a)+(+b) );
             
             let winRate = totalWins/winsStats.length;
-            console.log("++++++++"+country.code);
-            console.log(winRate+' '+totalWins);
             if(bestWinRate<winRate)
             {
                 bestWinRate = winRate;

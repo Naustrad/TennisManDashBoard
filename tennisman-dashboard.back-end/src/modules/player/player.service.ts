@@ -1,4 +1,5 @@
-import { Injectable } from "@nestjs/common";
+import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
+import { EntityNotFoundError } from "typeorm";
 import { PlayerRepository } from "../../repository/player.repository";
 import { AddPlayerDto } from "./dto/addPlayerDto";
 import { getAllPlayerDto } from "./dto/getAllPlayerDto";
@@ -24,9 +25,8 @@ export class PlayerService  {
 
 
     async getPlayerById(id : number){
-        let player = await this._playerRepository.findOneOrFail(id,{relations : ['country']})
-        return new PlayerDetailsDto(player);
-        
+            let player = await this._playerRepository.findOneOrFail(id,{relations : ['country']})
+            return new PlayerDetailsDto(player);
     }
 
 

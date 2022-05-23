@@ -1,12 +1,13 @@
-import { Body, Controller,Get, HttpCode, Param, ParseIntPipe, Post, UsePipes, ValidationPipe } from '@nestjs/common';
+import { Body, Controller,Get, HttpCode, HttpException, HttpStatus, Param, ParseIntPipe, Post, UsePipes, ValidationPipe } from '@nestjs/common';
 import { response } from 'express';
+import { EntityNotFoundError } from 'typeorm';
 import { AddPlayerDto } from './dto/addPlayerDto';
 import { PlayerService } from './player.service';
 
 @Controller('players')
 export class PlayerController {
 
-    constructor(private playerService:PlayerService) {}
+    constructor(private readonly playerService:PlayerService) {}
 
     //Get all player general data check getAllPlayerDto for more details
     @Get()
@@ -27,8 +28,10 @@ export class PlayerController {
         try {
             return await this.playerService.getPlayerById(id);
         } catch (error) {
-            console.log(error)
-            return response.status(500).send(error);
+            if(error instanceof EntityNotFoundError)
+                throw new HttpException('Player not found',HttpStatus.NOT_FOUND)
+            else
+                throw new HttpException('Unknown Error',HttpStatus.INTERNAL_SERVER_ERROR)
         }
     }
 
