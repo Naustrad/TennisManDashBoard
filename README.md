@@ -4,8 +4,6 @@
 This is a [demo]('https://tennismandashboardfrontend.up.railway.app/') project to help my recruiters get an idea of ​​my level in development with Typescript.
 This project is a dashboard application that shows some stats on tennis players.This project is built with NestJs (a node framework) and React
 
-Here the hosted [Demo](https://tennismandashboardfrontend.up.railway.app/)
-
 
 ## Installation
 
